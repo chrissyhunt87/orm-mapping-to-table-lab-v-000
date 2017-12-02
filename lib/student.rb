@@ -32,6 +32,8 @@ class Student
     sql = <<-SQL
     SQL
     DB[:conn].execute(sql)
+    self.id = DB[:conn].execute("")
+
   end
 
 end
