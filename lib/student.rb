@@ -18,6 +18,7 @@ class Student
         grade INTEGER
       )
     SQL
+    DB[:CONN].execute(SQL)
   end
 
 end
