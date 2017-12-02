@@ -30,6 +30,7 @@ class Student
 
   def save(name, grade)
     sql = <<-SQL
+      
     SQL
     DB[:conn].execute(sql)
     self.id = DB[:conn].execute("")
